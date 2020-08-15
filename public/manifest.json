@@ -4,7 +4,7 @@
   "description": "gif things done with a gif management system",
   "theme_color": "#00d6ff",
   "background_color": "#000000",
-  "display": "minimal-ui",
+  "display": "standalone",
   "orientation": "portrait",
   "scope": "/",
   "start_url": "/",
