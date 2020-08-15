@@ -12,7 +12,7 @@ class MyDocument extends Document {
       <Html lang='en'>
         <Head>
           <link rel='apple-touch-icon' href='/apple-touch-icon.png' />
-          <link rel='apple-touch-startup-image' href='/apple-touch-icon.png' />
+          <link rel='apple-touch-startup-image' media='screen' href='/apple-touch-icon.png' />
           <link rel='icon' href='/favicon.ico' />
           <link rel='manifest' href='/manifest.json' />
           <link rel='mask-icon' sizes='any' href='/mask-icon.svg' color='#00d6ff' />
