@@ -1,18 +1,23 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
 
 const cx = {
-  input: 'input-reset sans-serif border-box bn br0 pa2 ma0 fw1 w-100'
+  input: 'input-reset sans-serif border-box bn br0 pv2 fw1 w-100'
 }
+
+const PLACEHOLDER = 'MY HOT. PICS'
+const IS_BROWSER = typeof window !== 'undefined'
 
 const Search = ({ defaultValue }) => (
   <form method='get' action='/'>
     <style global jsx>
       {`
         input {
-          font-size: 7vw;
+          font-size: 9vw;
           color: #fff;
-          background-color: #242424;
+          background-color: #000;
+          padding-right env(safe-area-inset-right + 0.5rem , 0.5rem);
+          padding-left: env(safe-area-inset-left + 0.5rem , 0.5rem);
         }
 
         @media (prefers-color-scheme: light) {
@@ -38,7 +43,7 @@ const Search = ({ defaultValue }) => (
       defaultValue={defaultValue}
       id='q'
       name='q'
-      placeholder='HOT PICS'
+      placeholder={PLACEHOLDER}
       type='text'
       style={{
         appearance: 'none'
