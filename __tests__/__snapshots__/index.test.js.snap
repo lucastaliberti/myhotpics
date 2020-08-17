@@ -6,11 +6,11 @@ exports[`page - index should render 1`] = `
 >
   <form
     action="/"
-    className="jsx-1114613828"
+    className="jsx-2764144781"
     method="get"
   >
     <label
-      className="jsx-1114613828"
+      className="jsx-2764144781"
       htmlFor="q"
       style={
         Object {
@@ -23,11 +23,11 @@ exports[`page - index should render 1`] = `
     </label>
     <input
       autoFocus={true}
-      className="jsx-1114613828 input-reset sans-serif border-box bn br0 pa2 ma0 fw1 w-100"
+      className="jsx-2764144781 input-reset sans-serif border-box bn br0 pv2 fw1 w-100"
       defaultValue=""
       id="q"
       name="q"
-      placeholder="HOT PICS"
+      placeholder="MY HOT. PICS"
       style={
         Object {
           "appearance": "none",

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
 
 const cx = {
@@ -6,7 +6,6 @@ const cx = {
 }
 
 const PLACEHOLDER = 'MY HOT. PICS'
-const IS_BROWSER = typeof window !== 'undefined'
 
 const Search = ({ defaultValue }) => (
   <form method='get' action='/'>
