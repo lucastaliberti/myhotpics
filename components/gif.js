@@ -7,19 +7,18 @@ const cx = {
   a: 'bg-center cover dib relative w-50 ma0 fl cv-auto'
 }
 
-async function handleClick (url, title) {
-  if (navigator.share) {
-    const res = await fetch(url).catch(err => window.alert(err))
+async function handleClick (e, url, title) {
+  debugger // eslint-disable-line
+  if (navigator && navigator.share) {
+    e.preventDefault()
+    const res = await fetch(url).catch(() => window.location.assign(url))
     const blob = await res.blob()
     const file = new File([blob], `${title}.gif`, { type: blob.type })
     const data = {
       url,
       files: [file]
     }
-    await navigator.share(data).catch(err => window.alert(err))
-  } else {
-    window.alert('no share')
-    window.location.push(url)
+    await navigator.share(data).catch(() => window.location.assign(url))
   }
 }
 
