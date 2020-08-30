@@ -7,22 +7,18 @@ const cx = {
   a: 'bg-center cover dib relative w-50 ma0 fl cv-auto'
 }
 
-async function handleClick (e, url, title) {
-  e.preventDefault()
-  if (navigator.canShare) {
-    const res = await fetch(url)
+async function handleClick (url, title) {
+  if (navigator.share) {
+    const res = await fetch(url).catch(err => window.alert(err))
     const blob = await res.blob()
     const file = new File([blob], `${title}.gif`, { type: blob.type })
     const data = {
       url,
       files: [file]
     }
-    if (navigator.canShare(data)) {
-      await navigator.share(data)
-    } else {
-      window.location.push(url)
-    }
+    await navigator.share(data).catch(err => window.alert(err))
   } else {
+    window.alert('no share')
     window.location.push(url)
   }
 }
@@ -31,7 +27,12 @@ const Gif = ({ url, title }) => (
   <a
     className={cx.a}
     href={url}
-    onClick={e => handleClick(e, url, title)}
+    onClick={e => {
+      e.preventDefault()
+      if (typeof window !== 'undefined') {
+        handleClick(url, title)
+      }
+    }}
     title={title}
     style={{
       backgroundImage: `url(${url})`,
