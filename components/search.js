@@ -15,8 +15,8 @@ const Search = ({ defaultValue }) => (
           font-size: 9vw;
           color: #fff;
           background-color: #000;
-          padding-right env(safe-area-inset-right + 0.5rem , 0.5rem);
-          padding-left: env(safe-area-inset-left + 0.5rem , 0.5rem);
+          padding-right env(safe-area-inset-right, 0.5rem);
+          padding-left: env(safe-area-inset-left, 0.5rem);
         }
 
         @media (prefers-color-scheme: light) {
