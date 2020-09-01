@@ -8,7 +8,7 @@ const cx = {
 async function handleClick (e, url, title) {
   if (navigator && navigator.share) {
     e.preventDefault()
-    navigator.share({ url })
+    navigator.share({ title, url })
   }
 }
 
