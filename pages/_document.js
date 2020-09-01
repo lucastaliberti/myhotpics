@@ -14,7 +14,7 @@ class MyDocument extends Document {
           <link rel='apple-touch-icon' href='/apple-touch-icon.png' />
           <link rel='icon' href='/favicon.ico' />
           <link rel='manifest' href='/manifest.json' />
-          <link rel='mask-icon' sizes='any' href='/mask-icon.svg' color='#00a901' />
+          <link rel='mask-icon' sizes='any' href='/mask-icon.svg' color='#ff2900' />
           <meta charSet='utf-8' />
           <meta name='keywords' content='melkat, melanie, kat, link, blog, bookmarks' />
           <meta name='theme-color' content='#000000' />
