@@ -1,4 +1,3 @@
-import React from 'react'
 import fetch from 'isomorphic-unfetch'
 import get from 'lodash/get'
 import shuffle from 'lodash/shuffle'

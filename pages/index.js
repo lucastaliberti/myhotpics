@@ -1,4 +1,3 @@
-import React from 'react'
 import Gif from '../components/gif'
 import Layout from '../components/layout'
 import Search from '../components/search'
