@@ -37,8 +37,7 @@
   "resolutions": {
     "js-yaml": "^3.14.0",
     "minimist": "^1.2.3",
-    "node-fetch": "^2.6.1",
-    "object-path": "^0.11.5"
+    "node-fetch": "^2.6.1"
   },
   "jest": {
     "transform": {
