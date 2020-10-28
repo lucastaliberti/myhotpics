@@ -1,5 +1,10 @@
 import Head from 'next/head'
 import PropTypes from 'prop-types'
+import polyfills from '../utils/polyfills'
+
+if (process.env.NODE_ENV !== 'test') {
+  polyfills()
+}
 
 const cx = {
   main: 'sans-serif ma0 pa0'

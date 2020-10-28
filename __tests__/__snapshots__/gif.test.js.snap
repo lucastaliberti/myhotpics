@@ -7,7 +7,7 @@ exports[`component - gif should render 1`] = `
   onClick={[Function]}
   style={
     Object {
-      "backgroundImage": "url(https://gif.myhot.pics/Chase%20Nordengren%20Nordo%20Pow.gif)",
+      "backgroundImage": null,
       "height": "0",
       "paddingBottom": "33.33333%",
     }
